@@ -13,9 +13,14 @@ const getColors = async () => {
 getColors();
 
 const cambiarFondo = () => {
-  for (let color of colors) {
-    const fondo = document.querySelectorAll("li");
-    fondo.style.backgroundColor = color;
+  const fondo = document.querySelectorAll("li");
+
+  for (let elemento of fondo) {
+    for (let color of colors) {
+      if (elemento.textContent === color) {
+        elemento.style.backgroundColor = color;
+      }
+    }
   }
 };
 
