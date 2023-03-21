@@ -14,6 +14,7 @@ getColors();
 
 const cambiarFondo = () => {
 
+
     const fondo = document.querySelectorAll("li")
 
     for (let elemento of fondo) {
@@ -23,6 +24,7 @@ const cambiarFondo = () => {
             }
         }
     }
+
 };
 
 cambiarFondo();
